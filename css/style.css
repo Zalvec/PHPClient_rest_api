@@ -48,6 +48,8 @@ li {
     flex-direction: column;
 }
 
+.formdelete { margin-top: 5px;}
+
 .create {
     display: flex;
     justify-content: space-between;
@@ -80,6 +82,29 @@ textarea {
     width: 70%;
     margin: 0 10px;
 }
+.button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px #DDD;
+}
+
+.button:hover { box-shadow: 2px 3px 2px #222; }
+
+#createbutton, #showbutton {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+#deletebutton {
+    background-color: indianred;
+    color: darkred;
+}
+
+#editbutton {
+    background-color: lightskyblue;
+    color: blue;
+}
+
 
 /* MESSAGE TRANSFORMATION */
 .info, .error { justify-content: center; }

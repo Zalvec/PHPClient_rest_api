@@ -10,7 +10,7 @@
         <label for="Omschr">Omschrijving</label>
         <textarea id="Omschr" name="task" required>@@taa_omschr@@</textarea>
 
-        <input class="sumbit" type="submit" name="EditTask" value="Edit" />
+        <input class="sumbit button" id="editbutton" type="submit" name="EditTask" value="Edit" />
     </form>
 
     <div class="taskbuttons">
@@ -19,15 +19,15 @@
             <label>
                 <input hidden type="number" name="ID" placeholder="ID" value="@@taa_id@@" required>
             </label>
-            <input type="submit" name="OneTask" value="Show" />
+            <input class="button" id="showbutton" type="submit" name="OneTask" value="Show" />
         </form>
 
         <!-- Delete a task form-->
-        <form action="lib/task_form.php" method="post">
+        <form class="formdelete" action="lib/task_form.php" method="post">
             <label>
                 <input hidden type="number" name="ID" placeholder="ID" value="@@taa_id@@" required>
             </label>
-            <input type="submit" name="DeleteTask" value="Delete" />
+            <input class="button" id="deletebutton" type="submit" name="DeleteTask" value="Delete" />
 
         </form>
     </div> <!-- taskbuttons -->
