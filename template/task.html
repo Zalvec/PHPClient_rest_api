@@ -1,12 +1,35 @@
 <div class="task">
+    <!-- Edit a task form-->
+    <form class="edittask" action="lib/task_form.php" method="post">
+        <label for="ID">ID</label>
+        <input type="number" id="ID" name="ID" value="@@taa_id@@" readonly required>
 
-    <ul>
-        <div class="taskinfo">
-            <li>ID: @@taa_id@@</li>
-            <li>Datum: @@taa_datum@@</li>
-        </div> <!-- taskinfo -->
+        <label for="Date">Date</label>
+        <input type="date" id="Date" name="date" value="@@taa_datum@@" required>
 
-        <li>Omschrijving: @@taa_omschr@@</li>
-    </ul>
+        <label for="Omschr">Omschrijving</label>
+        <textarea id="Omschr" name="task" required>@@taa_omschr@@</textarea>
 
+        <input class="sumbit" type="submit" name="EditTask" value="Edit" />
+    </form>
+
+    <div class="taskbuttons">
+        <!-- One task form by ID-->
+        <form action="lib/task_form.php" method="post">
+            <label>
+                <input hidden type="number" name="ID" placeholder="ID" value="@@taa_id@@" required>
+            </label>
+            <input type="submit" name="OneTask" value="Show" />
+        </form>
+
+        <!-- Delete a task form-->
+        <form action="lib/task_form.php" method="post">
+            <label>
+                <input hidden type="number" name="ID" placeholder="ID" value="@@taa_id@@" required>
+            </label>
+            <input type="submit" name="DeleteTask" value="Delete" />
+
+        </form>
+    </div> <!-- taskbuttons -->
 </div> <!-- task -->
+

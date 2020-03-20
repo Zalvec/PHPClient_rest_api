@@ -1,54 +1,9 @@
-
-<div id="task_forms">
-    <!-- All task form-->
-    <form action="lib/task_form.php" method="post">
-        <div class="submitbutton">
-            <input type="submit" name="AllTasks" value="Get All Tasks" />
-        </div>
-    </form>
-
-    <!-- One task form by ID-->
-    <form action="lib/task_form.php" method="post">
-        <label>
-            <input type="number" name="ID" placeholder="ID" required>
-        </label>
-        <div class="submitbutton">
-            <input type="submit" name="OneTask" value="Get One Task" />
-        </div>
-    </form>
-
+    <h2>Create a new task</h2>
     <!-- Create a task form-->
-    <form action="lib/task_form.php" method="post">
-        <label>
-            <input type="date" name="date" placeholder="date" required>
-            <input type="text" name="task" placeholder="task" required>
+    <form class="create" action="lib/task_form.php" method="post">
+        <label class="create_label">
+            <input type="date" name="date" required>
+            <input type="text" name="task" placeholder="What are you postponing?" required>
         </label>
-        <div class="submitbutton">
-            <input type="submit" name="CreateTask" value="Create A Task" />
-        </div>
+        <input type="submit" name="CreateTask" value="Create" />
     </form>
-
-    <!-- Edit a task form-->
-    <form action="lib/task_form.php" method="post">
-        <label>
-            <input type="number" name="ID" placeholder="ID" required>
-            <input type="date" name="date" placeholder="date" required>
-            <input type="text" name="task" placeholder="task" required>
-        </label>
-        <div class="submitbutton">
-            <input type="submit" name="EditTask" value="Edit A Task" />
-        </div>
-    </form>
-
-    <!-- Delete a task form-->
-    <form action="lib/task_form.php" method="post">
-        <label>
-            <input type="number" name="ID" placeholder="ID" required>
-        </label>
-        <div class="submitbutton">
-            <input type="submit" name="DeleteTask" value="Delete A Task" />
-        </div>
-    </form>
-</div> <!-- task forms -->
-</main>
-</body>
