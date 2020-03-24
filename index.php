@@ -2,7 +2,7 @@
 require_once 'lib/autoload.php';
 
 $css = array( "style.css");
-$VS->BasicHead( $css );
+$VS->BasicHead( $folderpath, $css );
 
 $MS->ShowMessages();
 

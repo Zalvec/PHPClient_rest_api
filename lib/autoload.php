@@ -1,6 +1,7 @@
 <?php
 
-$begin_url = $_SERVER['DOCUMENT_ROOT'] . "/Groepswerken/TaskPHP/";
+$folderpath = "/Groepswerken/TaskPHP/";
+$begin_url = $_SERVER['DOCUMENT_ROOT'] . $folderpath;
 
 //load Models
 require_once $begin_url . "Model/Task.php";

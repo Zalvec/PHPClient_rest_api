@@ -27,14 +27,14 @@ class ViewService
     }
 
     /* Deze functie laadt de <head> sectie */
-    function BasicHead( $css = "" )
+    function BasicHead($folderpath,  $css = "" )
     {
         $str_stylesheets = "";
         if ( is_array($css))
         {
             foreach( $css as $stylesheet )
             {
-                $str_stylesheets .= '<link rel="stylesheet" href="/Groepswerken/TaskPHP/css/' . $stylesheet . '">' ;
+                $str_stylesheets .= '<link rel="stylesheet" href="' . $folderpath . 'css/' . $stylesheet . '">' ;
             }
         }
 
